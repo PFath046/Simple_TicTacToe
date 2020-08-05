@@ -62,11 +62,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
     /**
      * returns the value of button b.
      * @param b
-     * a button
+     * button b
      * @return
      *  the value of button b.
      */
@@ -80,7 +79,85 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    
+    /**
+     *returns the row of button b
+     * @param b
+     * button b
+     * @return the row which b is placed at
+     */
+    protected int getRow(Button b){
+        String ID = b.getResources().getResourceEntryName(b.getId());
+        return Character.getNumericValue(ID.charAt(ID.length()-2));
+    }
+
+    /**
+     *returns the column of button b
+     * @param b
+     * button b
+     * @return the column which b is placed at
+     */
+    protected int getCol(Button b){
+        String ID = b.getResources().getResourceEntryName(b.getId());
+        return Character.getNumericValue(ID.charAt(ID.length()-1));
+    }
+
+    /**
+     * checks whether the player placed in button b has won the game.
+     * @param b
+     * button b
+     */
+    protected void checkForWin(Button b){
+        Value player = getValue(b);
+        int countRow = 0;
+        int countCol = 0;
+        int countDiag = 0;
+        int countAnti = 0;
+        int row = getRow(b);
+        int col = getCol(b);
+
+        //Checks row
+        for (int i = 0; i < 3 ; i++){
+            if (getValue(grid[row][i]) == player){
+                countRow ++;
+            }
+        }
+
+        //Checks column
+        for (int i = 0; i < 3 ; i++){
+            if (getValue(grid[i][col]) == player){
+                countCol ++;
+            }
+        }
+
+        //Checks diagonal
+        if (row == col) {
+            for (int i = 0; i < 3; i++) {
+                if (getValue(grid[i][i]) == player) {
+                    countDiag++;
+                }
+            }
+        }
+
+
+        //Checks anti-diagonal
+        if (row + col == 3-1){
+            for (int i = 0; i < 3; i++) {
+                if (getValue(grid[i][2-i]) == player) {
+                    countAnti++;
+                }
+            }
+        }
+
+
+        if (countRow == 3 || countCol == 3 || countDiag == 3 || countAnti == 3){
+            if (player == Value.X){
+                state = State.XWON;
+            }
+            else if (player == Value.O) {
+                state = State.OWON;
+            }
+        }
+    }
 
 
     public void onClick(View v) {
@@ -93,7 +170,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 b.setText("O");
             }
             moveCount ++;
+
+            checkForWin(b);
+
         }
     }
+
+
 
 }

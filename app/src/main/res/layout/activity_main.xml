@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#000000"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,21 +19,32 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64" />
 
         <Button
             android:id="@+id/button01"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
         <Button
             android:id="@+id/button02"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+        <Button
+            android:id="@+id/button03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
     </LinearLayout>
 
@@ -44,21 +57,33 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
         <Button
             android:id="@+id/button11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
         <Button
             android:id="@+id/button12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
 
     </LinearLayout>
 
@@ -71,27 +96,104 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
         <Button
             android:id="@+id/button21"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
         <Button
             android:id="@+id/button22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+        <Button
+            android:id="@+id/button33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:backgroundTint="#FFEB64"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/xScoreView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/oScoreView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/nextRound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C4FF80"
+            android:text="NEXT ROUND" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="reset" />
+
+    </LinearLayout>
 
 </LinearLayout>

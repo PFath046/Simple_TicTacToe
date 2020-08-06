@@ -21,7 +21,8 @@ Use case 5:
 App architecture:
 
 1) The framework used is Android Studios.
-2) The most important parts of the system are the MainActivity.java and activity_mail.xml files which I have coded to make the resulting app.
+2) The most important parts of the system are the MainActivity.java (found at TicTacToe/app/src/main/res/layout/)
+and activity_mail.xml (found at TicTacToe\app\src\main\java\com\example\simple_tictactoe) files which I have coded to make the resulting app.
 3) To modify the apps main functionalities, the MainActivity.java and activity_mail.xml must be modified
 
 Using Umple I have created a state diagram which describes how the game works. The Umple files for this can be found here in this repository (at PFath046/Simple_TicTacToe)

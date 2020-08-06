@@ -18,7 +18,7 @@ Use case 5:
   Players want to see their scores. The text below the grid contains both players scores for the game.
   
   
-#App architecture
+App architecture:
 
 1) The framework used is Android Studios.
 2) The most important parts of the system are the MainActivity.java and activity_mail.xml files which I have coded to make the resulting app.

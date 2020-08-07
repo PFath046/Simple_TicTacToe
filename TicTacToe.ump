@@ -1,0 +1,53 @@
+class TicTacToe{
+  
+  sm{
+    xTurn{
+      play -> oTurn;
+      reset -> xTurn;
+      win -> xWin;
+      gridFull -> draw;
+      
+    }
+    oTurn{
+      play -> xTurn;
+      reset -> xTurn;
+      win -> oWin;
+      gridFull -> draw;
+    }
+    
+    oWin{
+      nextRound -> xTurn;
+      reset -> xTurn;
+    }
+    
+    xWin{
+      nextRound -> xTurn;
+      reset -> xTurn;
+    }
+    
+    draw{
+      nextRound -> xTurn;
+      reset -> xTurn;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+}//$?[End_of_model]$?
+
+namespace -;
+
+
+class TicTacToe
+{
+  position 50 30 109 45;
+}

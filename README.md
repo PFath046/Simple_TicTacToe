@@ -35,7 +35,7 @@ App architecture:
   3) To modify the apps main functionalities, the MainActivity.java and activity_mail.xml must be modified. To incrase the size of the grid in the game,
   create and align more buttons using activity_mail.xml in the same style that I have, and just simply increase the size attribute in MainActivity.java
 
-Using Umple I have created a state diagram which describes how the game works. The Umple files for this can be found here in this repository (at PFath046/TicTacToe)
+Using Umple I have created a state diagram which describes how the game works. And generated java code for the state diagram. The Umple files for this can be found here in this repository (at PFath046/TicTacToe)
   
   
   
